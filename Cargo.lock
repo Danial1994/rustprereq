@@ -636,6 +636,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "771fe0050b883fcc3ea2359b1a96bcfbc090b7116eae7c3c512c7a083fdf23d3"
 
 [[package]]
+name = "bs58"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bf88ba1141d185c399bee5288d850d63b8369520c1eafc32a0430b5b6c287bf4"
+dependencies = [
+ "tinyvec",
+]
+
+[[package]]
 name = "bumpalo"
 version = "3.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2822,6 +2831,7 @@ name = "rustprereq"
 version = "0.1.0"
 dependencies = [
  "borsh 0.10.4",
+ "bs58 0.5.1",
  "solana-client",
  "solana-idlgen",
  "solana-program",
@@ -3123,7 +3133,7 @@ dependencies = [
  "Inflector",
  "base64 0.21.7",
  "bincode",
- "bs58",
+ "bs58 0.4.0",
  "bv",
  "lazy_static",
  "serde",
@@ -3232,7 +3242,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "45478bad85abd8cc291775463e15bc1031fdbf973d48e2568e8defee3d842a3a"
 dependencies = [
  "block-buffer 0.10.4",
- "bs58",
+ "bs58 0.4.0",
  "bv",
  "either",
  "generic-array",
@@ -3380,7 +3390,7 @@ dependencies = [
  "borsh 0.10.4",
  "borsh 0.9.3",
  "borsh 1.5.1",
- "bs58",
+ "bs58 0.4.0",
  "bv",
  "bytemuck",
  "cc",
@@ -3536,7 +3546,7 @@ dependencies = [
  "async-trait",
  "base64 0.21.7",
  "bincode",
- "bs58",
+ "bs58 0.4.0",
  "indicatif",
  "log",
  "reqwest",
@@ -3560,7 +3570,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "87eb2c3106e48bc02d61a8f5df98956b7cfb370391dd0aa55bba63142e066519"
 dependencies = [
  "base64 0.21.7",
- "bs58",
+ "bs58 0.4.0",
  "jsonrpc-core",
  "reqwest",
  "semver",
@@ -3599,7 +3609,7 @@ dependencies = [
  "bincode",
  "bitflags 2.6.0",
  "borsh 1.5.1",
- "bs58",
+ "bs58 0.4.0",
  "bytemuck",
  "byteorder",
  "chrono",
@@ -3649,7 +3659,7 @@ version = "1.18.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9ed90de8086a0e114ab63454a9d066e0f08eb2c9c8aea149ff60e8a492f165fc"
 dependencies = [
- "bs58",
+ "bs58 0.4.0",
  "proc-macro2",
  "quote",
  "rustversion",
@@ -3744,7 +3754,7 @@ dependencies = [
  "base64 0.21.7",
  "bincode",
  "borsh 0.10.4",
- "bs58",
+ "bs58 0.4.0",
  "lazy_static",
  "log",
  "serde",
