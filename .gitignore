@@ -1,0 +1,16 @@
+node_modules/
+yarn-lock.json
+
+# IDE settings
+*.suo
+*.user
+*.vshost.exe
+*.pdb
+*.cache
+
+# Temporary files
+*.tmp
+*.swp
+*notes.txt
+# Wallet files
+*wallet.json
